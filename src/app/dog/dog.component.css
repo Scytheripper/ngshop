@@ -1,0 +1,34 @@
+    .card{
+        margin: 2%;
+    }
+
+    .card-body{
+    }
+    .card-body > img {
+        height: 200px;
+        width: 400px;
+    }
+
+    .footer-control{
+        text-decoration: none;
+        color: grey;
+    }
+
+    .footer-control:hover{
+        color: pink;
+    }
+
+    .favorite {
+        color: red;
+    }
+
+    .favorite:hover{
+        color: red;
+    }
+    .like {
+        float: left;
+    }
+
+    .favorite, .not-favorite{
+        float: right;
+    }

@@ -1,0 +1,20 @@
+<div>
+  <div class="card">
+    <div class="card-header">
+        <p>{{dog.title}}</p>
+    </div>
+    <div class="card-body">
+        <img src="{{dog.image}}" alt="">
+    </div>
+    <div class="card-footer">
+      <div class="like">
+          <i [ngClass]="'footer-control'"  (click)="liked()" class="fas fa-thumbs-up fa-2x"></i>
+          <p>Likes: {{likes}}</p>
+      </div>
+      <i *ngIf="favorite;else notFavorite" [ngClass]="'footer-control favorite'" (click)="favorited()" class="fas fa-heart fa-2x"></i>
+      <ng-template #notFavorite>
+          <i [ngClass]="'footer-control not-favorite'" (click)="favorited()" class="fas fa-heart fa-2x"></i>
+      </ng-template>
+    </div>
+  </div>
+</div>  
